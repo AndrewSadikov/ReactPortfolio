@@ -4,7 +4,8 @@ const Contact = (props) => {
       <section
         className={props.darkMode ? "section-main" : "section-main-dark"}
       >
-        <h1>Contact me:</h1>
+        <h3>Contact</h3>
+        <p>This is still a work in progress. Check back later for updates!</p>
       </section>
     </div>
   );

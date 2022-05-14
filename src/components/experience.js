@@ -4,7 +4,8 @@ const Experience = (props) => {
       <section
         className={props.darkMode ? "section-main" : "section-main-dark"}
       >
-        <h1>What I've Done:</h1>
+        <h3>Experience</h3>
+        <p>This is still a work in progress. Check back later for updates!</p>
       </section>
     </div>
   );
