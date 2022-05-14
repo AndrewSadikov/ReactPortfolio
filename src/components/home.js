@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
 const Home = (props) => {
   return (
     <div className="container">
@@ -5,17 +8,25 @@ const Home = (props) => {
         className={props.darkMode ? "section-main" : "section-main-dark"}
       >
         <img
-          className="main-logo"
+          className="home-logo"
           alt=""
           src={require("../images/avatar.png")}
         ></img>
-        <h2 className="main-subtitle">
+        <div className="home-sm">
+          <FontAwesomeIcon icon={faGithub} className="home-sm-icon" />
+          <FontAwesomeIcon icon={faLinkedin} className="home-sm-icon" />
+        </div>
+        <h1 className="home-subtitle">
           Hi, I am <span className="gold">Andrew Sadikov</span>
-        </h2>
-        <h1 className="main-title">Creative Full Stack Developer</h1>
-        <h3 className="main-smalltitle">
-          I design and code beautifully simple things, and I love what I do
-        </h3>
+        </h1>
+        <h1 className="home-title">Full Stack Software Engineer</h1>
+        <h1
+          className={
+            props.darkMode ? "home-smalltitle" : "home-smalltitle-dark"
+          }
+        >
+          I code beautiful, simple things and I love what I do.
+        </h1>
       </section>
     </div>
   );
