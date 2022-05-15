@@ -373,3 +373,119 @@ a {
     margin-top: -10px;
   }
 }
+
+.proj-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 45px;
+  max-width: 500px;
+}
+
+.proj-image {
+  border-radius: 5px;
+  max-width: 120px;
+}
+
+.proj-title {
+  margin: 4px 10px;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.proj-info {
+  text-align: center;
+}
+
+.proj-button-section {
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.proj-button-live {
+  cursor: pointer;
+  background-color: inherit;
+  border-radius: 5px;
+  border: 1px solid var(--blue);
+  padding: 4px 0px;
+  margin: 0px 5px;
+  width: 100px;
+}
+
+.proj-button-live:hover {
+  cursor: pointer;
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+  border-radius: 5px;
+  color: white;
+  padding: 4px 0px;
+  margin: 0px 5px;
+  width: 100px;
+}
+
+.proj-button-code {
+  cursor: pointer;
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+  border-radius: 5px;
+  color: white;
+  padding: 4px 0px;
+  margin: 0px 5px;
+  width: 100px;
+}
+
+.proj-button-code:hover {
+  color: black;
+  cursor: pointer;
+  background-color: inherit;
+  border-radius: 5px;
+  border: 1px solid var(--blue);
+  padding: 4px 0px;
+  margin: 0px 5px;
+  width: 100px;
+}
+
+.proj-button-live-dark {
+  color: white;
+  cursor: pointer;
+  background-color: inherit;
+  border-radius: 5px;
+  border: 1px solid var(--gold);
+  padding: 4px 0px;
+  margin: 0px 5px;
+  width: 100px;
+}
+
+.proj-button-live-dark:hover {
+  cursor: pointer;
+  background-color: var(--gold);
+  border: 1px solid var(--gold);
+  border-radius: 5px;
+  color: black;
+  padding: 4px 0px;
+  margin: 0px 5px;
+  width: 100px;
+}
+
+.proj-button-code-dark {
+  cursor: pointer;
+  background-color: var(--gold);
+  border: 1px solid var(--gold);
+  border-radius: 5px;
+  color: black;
+  padding: 4px 0px;
+  margin: 0px 5px;
+  width: 100px;
+}
+
+.proj-button-code-dark:hover {
+  color: white;
+  cursor: pointer;
+  background-color: inherit;
+  border-radius: 5px;
+  border: 1px solid var(--gold);
+  padding: 4px 0px;
+  margin: 0px 5px;
+  width: 100px;
+}
