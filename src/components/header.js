@@ -52,13 +52,7 @@ const Header = (props) => {
             >
               Contact
             </li>
-            <li
-              className="nav-link"
-              onClick={() => {
-                props.setDarkMode();
-                scrollToTop();
-              }}
-            >
+            <li className="nav-link" onClick={() => props.setDarkMode()}>
               <FontAwesomeIcon
                 className={props.darkMode ? "blue" : "gold"}
                 icon={props.darkMode ? faMoon : faSun}
