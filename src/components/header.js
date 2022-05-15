@@ -23,7 +23,10 @@ const Header = (props) => {
           Contact
         </li>
         <li className="nav-link" onClick={() => props.setDarkMode()}>
-          <FontAwesomeIcon icon={props.darkMode ? faMoon : faSun} />
+          <FontAwesomeIcon
+            className={props.darkMode ? "blue" : "gold"}
+            icon={props.darkMode ? faMoon : faSun}
+          />
         </li>
       </ul>
       <div>

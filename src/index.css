@@ -1,6 +1,6 @@
 :root {
-  --dark-background: rgb(90, 80, 120);
-  --dark-backgroundMain: rgb(70, 60, 96);
+  --dark-background: #5a5078;
+  --dark-backgroundMain: #463c60;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(66, 66, 66);
+  background-color: #424242;
 }
 
 code {
@@ -31,6 +31,10 @@ a {
   color: goldenrod;
 }
 
+.blue {
+  color: #2c5fe1;
+}
+
 .nav {
   background-color: white;
   height: 60px;
@@ -47,7 +51,7 @@ a {
   color: white;
   height: 60px;
   padding: 0px 20px;
-  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 0px 5px #ffffff66;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -203,9 +207,11 @@ a {
 .wip-title {
   margin: 5px;
   padding-top: 20px;
+  text-align: center;
 }
 
 .wip-p {
   margin: 5px;
   padding-bottom: 20px;
+  text-align: center;
 }
