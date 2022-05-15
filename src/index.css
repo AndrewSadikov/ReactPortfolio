@@ -377,9 +377,8 @@ a {
 .proj-card {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin: 20px 45px;
-  max-width: 500px;
 }
 
 .proj-image {
@@ -394,6 +393,8 @@ a {
 }
 
 .proj-info {
+  width: 100%;
+  margin-left: 5px;
   text-align: center;
 }
 
@@ -488,4 +489,30 @@ a {
   padding: 4px 0px;
   margin: 0px 5px;
   width: 100px;
+}
+
+@media (max-width: 600px) {
+  .proj-image {
+    width: 80px;
+  }
+
+  .proj-button-code {
+    font-size: 11px;
+    width: 80px;
+  }
+
+  .proj-button-live {
+    font-size: 11px;
+    width: 80px;
+  }
+
+  .proj-button-code-dark {
+    font-size: 11px;
+    width: 80px;
+  }
+
+  .proj-button-live-dark {
+    font-size: 11px;
+    width: 80px;
+  }
 }
