@@ -1,6 +1,10 @@
 :root {
-  --dark-background: #5a5078;
-  --dark-backgroundMain: #463c60;
+  --dark-background: #181c20;
+  --dark-backgroundMain: #0e1117;
+  --blue: #38427c;
+  --gold: goldenrod;
+  --grey: #666666;
+  --light-grey: #b4b4b4;
 }
 
 body {
@@ -28,11 +32,11 @@ a {
 }
 
 .gold {
-  color: goldenrod;
+  color: var(--gold);
 }
 
 .blue {
-  color: #38427c;
+  color: var(--blue);
 }
 
 .nav {
@@ -122,7 +126,7 @@ a {
 
 .section-main-dark {
   background-color: var(--dark-background);
-  color: white;
+  color: rgb(223, 223, 223);
 
   margin: auto;
   max-width: 800px;
@@ -150,7 +154,7 @@ a {
 }
 
 .home-smalltitle {
-  color: #666666;
+  color: var(--grey);
   margin: 5px 10px;
   margin-top: 15px;
   font-size: 16px;
@@ -160,7 +164,7 @@ a {
 }
 
 .home-smalltitle-dark {
-  color: white;
+  color: var(--light-grey);
 
   margin: 5px 10px;
   margin-top: 15px;
@@ -206,9 +210,82 @@ a {
   }
 }
 
+.cards-container {
+  margin: -5px 0px 30px;
+}
+
+.exp-card {
+  margin: 20px 45px;
+}
+
+.exp-card-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.exp-card-title {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.exp-card-subtitle {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.exp-card-about {
+  color: var(--grey);
+
+  font-size: 14px;
+  font-weight: 400;
+  margin: 4px 20px;
+}
+
+.exp-card-about-dark {
+  color: var(--light-grey);
+
+  font-size: 14px;
+  font-weight: 400;
+  margin: 4px 20px;
+}
+
+.read-more-btn {
+  background: none;
+  color: var(--blue);
+  border: none;
+  padding: 0;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.read-more-btn-dark {
+  background: none;
+  color: var(--gold);
+  border: none;
+  padding: 0;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  outline: inherit;
+}
+
 .wip-title {
+  color: var(--blue);
+  font-size: 22px;
+  font-weight: 700;
   margin: 5px;
-  padding-top: 20px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.wip-title-dark {
+  color: var(--gold);
+  font-size: 22px;
+  font-weight: 700;
+  margin: 5px;
+  padding-top: 40px;
   text-align: center;
 }
 
@@ -216,4 +293,54 @@ a {
   margin: 5px;
   padding-bottom: 20px;
   text-align: center;
+}
+
+@media (max-width: 600px) {
+  .section-main {
+    margin-top: 20px;
+  }
+
+  .section-main-dark {
+    margin-top: 20px;
+  }
+
+  .container {
+    margin: 20px;
+  }
+
+  .cards-container {
+    margin: -5px 0px 5px;
+    margin-bottom: 20px;
+  }
+
+  .exp-card {
+    margin: 20px 15px;
+  }
+
+  .exp-card-title {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .exp-card-subtitle {
+    font-size: 12px;
+  }
+
+  .exp-card-about {
+    font-size: 12px;
+  }
+
+  .exp-card-about-dark {
+    font-size: 12px;
+  }
+
+  .wip-title {
+    font-size: 18px;
+    margin-top: -10px;
+  }
+
+  .wip-title-dark {
+    font-size: 18px;
+    margin-top: -10px;
+  }
 }

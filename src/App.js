@@ -4,6 +4,10 @@ import Home from "./components/home";
 import Projects from "./components/projects";
 import Experience from "./components/experience";
 import Contact from "./components/contact";
+import ProjectCard from "./components/projectCard";
+import ExperienceCard from "./components/experienceCard";
+import experienceData from "./data/experienceData";
+import projectData from "./data/projectData";
 
 function App() {
   const [mainState, setMainState] = useState("Home");
@@ -13,6 +17,14 @@ function App() {
     setDarkMode(!darkMode);
   };
 
+  const experienceCards = experienceData.map((item) => {
+    return <ExperienceCard {...item} darkMode={darkMode} />;
+  });
+
+  const projectCards = projectData.map((item) => {
+    return <ProjectCard {...item} />;
+  });
+
   if (mainState === "Experience") {
     return (
       <div className={darkMode ? "light" : "dark"}>
@@ -21,7 +33,7 @@ function App() {
           setDarkMode={setDarkModeFunction}
           darkMode={darkMode}
         />
-        <Experience darkMode={darkMode} />
+        <Experience darkMode={darkMode} cards={experienceCards} />
       </div>
     );
   }
@@ -34,7 +46,7 @@ function App() {
           setDarkMode={setDarkModeFunction}
           darkMode={darkMode}
         />
-        <Projects darkMode={darkMode} />
+        <Projects darkMode={darkMode} cards={projectCards} />
       </div>
     );
   }
@@ -60,6 +72,9 @@ function App() {
         darkMode={darkMode}
       />
       <Home darkMode={darkMode} />
+      <Experience darkMode={darkMode} cards={experienceCards} />
+      <Projects darkMode={darkMode} cards={projectCards} />
+      <Contact darkMode={darkMode} />
     </div>
   );
 }
