@@ -18,11 +18,11 @@ function App() {
   };
 
   const experienceCards = experienceData.map((item) => {
-    return <ExperienceCard {...item} darkMode={darkMode} />;
+    return <ExperienceCard key={item.title} {...item} darkMode={darkMode} />;
   });
 
   const projectCards = projectData.map((item) => {
-    return <ProjectCard {...item} />;
+    return <ProjectCard key={item.name} {...item} darkMode={darkMode} />;
   });
 
   if (mainState === "Experience") {

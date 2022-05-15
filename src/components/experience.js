@@ -5,7 +5,7 @@ const Experience = (props) => {
         className={props.darkMode ? "section-main" : "section-main-dark"}
       >
         <h3 className={props.darkMode ? "wip-title" : "wip-title-dark"}>
-          Experience
+          Work Experience
         </h3>
         <div className="cards-container">{props.cards}</div>
       </section>
