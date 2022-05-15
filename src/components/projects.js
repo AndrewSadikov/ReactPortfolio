@@ -4,8 +4,10 @@ const Projects = (props) => {
       <section
         className={props.darkMode ? "section-main" : "section-main-dark"}
       >
-        <h3>Projects</h3>
-        <p>This is still a work in progress. Check back later for updates!</p>
+        <h3 className="wip-title">Projects</h3>
+        <p className="wip-p">
+          This is still a work in progress. Check back later for updates!
+        </p>
       </section>
     </div>
   );

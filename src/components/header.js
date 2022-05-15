@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Header = (props) => {
   return (
@@ -26,11 +27,20 @@ const Header = (props) => {
         </li>
       </ul>
       <div>
-        <img
-          className="nav-icon"
-          alt=""
-          src={require("../images/github.png")}
-        ></img>
+        <a
+          href="https://github.com/AndrewSadikov"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon className="nav-icon" icon={faGithub} />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/andrewsadikov/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon className="nav-icon" icon={faLinkedin} />
+        </a>
       </div>
     </nav>
   );

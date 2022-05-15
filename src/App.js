@@ -15,7 +15,7 @@ function App() {
 
   if (mainState === "Experience") {
     return (
-      <div className={darkMode ? "ahh" : "dark"}>
+      <div className={darkMode ? "light" : "dark"}>
         <Header
           setMainState={setMainState}
           setDarkMode={setDarkModeFunction}
@@ -28,7 +28,7 @@ function App() {
 
   if (mainState === "Projects") {
     return (
-      <div className={darkMode ? "ahh" : "dark"}>
+      <div className={darkMode ? "light" : "dark"}>
         <Header
           setMainState={setMainState}
           setDarkMode={setDarkModeFunction}
@@ -41,7 +41,7 @@ function App() {
 
   if (mainState === "Contact") {
     return (
-      <div className={darkMode ? "ahh" : "dark"}>
+      <div className={darkMode ? "light" : "dark"}>
         <Header
           setMainState={setMainState}
           setDarkMode={setDarkModeFunction}
@@ -53,7 +53,7 @@ function App() {
   }
 
   return (
-    <div className={darkMode ? "ahh" : "dark"}>
+    <div className={darkMode ? "light" : "dark"}>
       <Header
         setMainState={setMainState}
         setDarkMode={setDarkModeFunction}

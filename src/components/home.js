@@ -13,8 +13,20 @@ const Home = (props) => {
           src={require("../images/avatar.png")}
         ></img>
         <div className="home-sm">
-          <FontAwesomeIcon icon={faGithub} className="home-sm-icon" />
-          <FontAwesomeIcon icon={faLinkedin} className="home-sm-icon" />
+          <a
+            href="https://github.com/AndrewSadikov"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon className="home-sm-icon" icon={faGithub} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/andrewsadikov/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon className="home-sm-icon" icon={faLinkedin} />
+          </a>
         </div>
         <h1 className="home-subtitle">
           Hi, I am <span className="gold">Andrew Sadikov</span>
