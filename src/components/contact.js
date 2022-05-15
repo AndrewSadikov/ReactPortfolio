@@ -1,6 +1,6 @@
 const Contact = (props) => {
   return (
-    <div className="container">
+    <div id="Contact" className="container">
       <section
         className={props.darkMode ? "section-main" : "section-main-dark"}
       >

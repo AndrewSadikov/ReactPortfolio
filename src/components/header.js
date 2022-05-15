@@ -2,13 +2,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-};
-
 const Header = (props) => {
   return (
     <>
@@ -16,39 +9,24 @@ const Header = (props) => {
         <nav className={props.darkMode ? "nav" : "nav-dark"}>
           <h1 className="nav-title">A.S.</h1>
           <ul className="nav-menu">
-            <li
-              className="nav-link"
-              onClick={() => {
-                props.setMainState("Home");
-                scrollToTop();
-              }}
-            >
-              Home
+            <li className="nav-link" onClick={() => props.scrollHere("Home")}>
+              Home{" "}
             </li>
             <li
               className="nav-link"
-              onClick={() => {
-                props.setMainState("Experience");
-                scrollToTop();
-              }}
+              onClick={() => props.scrollHere("Experience")}
             >
               Experience
             </li>
             <li
               className="nav-link"
-              onClick={() => {
-                props.setMainState("Projects");
-                scrollToTop();
-              }}
+              onClick={() => props.scrollHere("Projects")}
             >
               Projects
             </li>
             <li
               className="nav-link"
-              onClick={() => {
-                props.setMainState("Contact");
-                scrollToTop();
-              }}
+              onClick={() => props.scrollHere("Contact")}
             >
               Contact
             </li>

@@ -3,7 +3,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Home = (props) => {
   return (
-    <div className="container">
+    <div id="Home" className="container">
       <section
         className={props.darkMode ? "section-main" : "section-main-dark"}
       >
