@@ -10,7 +10,9 @@ const Home = (props) => {
         <img
           className="home-logo"
           alt=""
-          src={require("../images/avatar.png")}
+          src={require(props.darkMode
+            ? "../images/avatardark.png"
+            : "../images/avatar.png")}
         ></img>
         <div className="home-sm">
           <a
@@ -29,7 +31,10 @@ const Home = (props) => {
           </a>
         </div>
         <h1 className="home-subtitle">
-          Hi, I am <span className="gold">Andrew Sadikov</span>
+          Hi, I am{" "}
+          <span className={props.darkMode ? "blue" : "gold"}>
+            Andrew Sadikov
+          </span>
         </h1>
         <h1 className="home-title">Full Stack Software Engineer</h1>
         <h1
