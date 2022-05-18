@@ -1,4 +1,6 @@
 :root {
+  --white: white;
+  --black: black;
   --dark-background: #181c20;
   --dark-backgroundMain: #0e1117;
   --blue: #38427c;
@@ -51,7 +53,7 @@ a {
 
 .nav,
 .nav-dark {
-  background-color: white;
+  background-color: var(--white);
   height: 60px;
   padding: 0px 20px;
   box-shadow: 0px 0px 5px grey;
@@ -63,7 +65,7 @@ a {
 
 .nav-dark {
   background-color: var(--dark-background);
-  color: white;
+  color: var(--white);
   box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6);
 }
 
@@ -106,7 +108,7 @@ a {
 
 .footer,
 .footer-dark {
-  background-color: white;
+  background-color: var(--white);
   box-shadow: 0px 0px 5px grey;
   margin-top: 40px;
 }
@@ -135,7 +137,7 @@ a {
 
 .section-main,
 .section-main-dark {
-  background-color: white;
+  background-color: var(--white);
   margin: auto;
   max-width: 800px;
   margin-top: 40px;
@@ -372,13 +374,13 @@ a {
 .proj-button-live:hover {
   background-color: var(--blue);
   border: 1px solid var(--blue);
-  color: white;
+  color: var(--white);
 }
 
 .proj-button-code {
   background-color: var(--blue);
   border: 1px solid var(--blue);
-  color: white;
+  color: var(--white);
 }
 
 .proj-button-code:hover {
@@ -388,7 +390,7 @@ a {
 }
 
 .proj-button-live-dark {
-  color: white;
+  color: var(--white);
   background-color: inherit;
   border: 1px solid var(--gold);
 }
@@ -406,7 +408,7 @@ a {
 }
 
 .proj-button-code-dark:hover {
-  color: white;
+  color: var(--white);
   background-color: inherit;
   border: 1px solid var(--gold);
 }
