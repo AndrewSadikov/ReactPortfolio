@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+// Loads data one object at a time from the experienceData file.
 const ExperienceCard = (props) => {
   const [readMore, setReadMore] = useState(false);
   return (

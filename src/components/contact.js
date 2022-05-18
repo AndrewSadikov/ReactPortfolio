@@ -1,3 +1,5 @@
+// WIP content component.
+
 const Contact = (props) => {
   return (
     <div id="Contact" className="container">

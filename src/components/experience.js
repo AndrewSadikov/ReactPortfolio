@@ -1,3 +1,5 @@
+// Section that contains all of the experience cards.
+
 const Experience = (props) => {
   return (
     <div id="Experience" className="container">

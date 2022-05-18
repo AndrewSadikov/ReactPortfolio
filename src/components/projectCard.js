@@ -1,3 +1,5 @@
+// Loads data one object at a time from the projectData file.
+
 const ProjectCard = (props) => {
   return (
     <div className="proj-card">

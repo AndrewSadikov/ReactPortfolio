@@ -1,3 +1,4 @@
+// The data that the experience component loads into the cards.
 const experienceData = [
   {
     name: "EveryDayEspo LLC",

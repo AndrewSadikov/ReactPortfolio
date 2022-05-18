@@ -1,3 +1,5 @@
+// WIP footer component.
+
 const Footer = (props) => {
   return (
     <div className={props.darkMode ? "footer" : "footer-dark"}>

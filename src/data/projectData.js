@@ -1,3 +1,4 @@
+// The data that the project component loads into the cards.
 const projectData = [
   {
     name: "Personal Portfolio App",

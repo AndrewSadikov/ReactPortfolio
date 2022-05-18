@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
+// Home component that includes my picture and a few lines of content.
 const Home = (props) => {
   return (
     <div id="Home" className="container">

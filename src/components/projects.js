@@ -1,3 +1,5 @@
+// Section that contains all of the project cards.
+
 const Projects = (props) => {
   return (
     <div id="Projects" className="container">
