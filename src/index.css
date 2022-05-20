@@ -215,6 +215,27 @@ a {
   .nav-title {
     display: none;
   }
+
+  .section-main,
+  .section-main-dark {
+  }
+
+  .home-logo {
+    height: 140px;
+  }
+
+  .home-title {
+    font-size: 16px;
+  }
+
+  .home-subtitle {
+    font-size: 14px;
+  }
+
+  .home-smalltitle,
+  .home-smalltitle-dark {
+    font-size: 12px;
+  }
 }
 
 .cards-container {
@@ -291,20 +312,19 @@ a {
 @media (max-width: 600px) {
   .section-main,
   .section-main-dark {
-    margin-top: 20px;
+    margin-top: 0px;
   }
 
   .container {
-    margin: 20px;
+    margin: 25px 15px;
   }
 
   .cards-container {
-    margin: -5px 0px 5px;
     margin-bottom: 20px;
   }
 
   .exp-card {
-    margin: 20px 25px;
+    margin: 20px 20px;
   }
 
   .exp-card-title {
@@ -318,38 +338,38 @@ a {
 
   .exp-card-about,
   .exp-card-about-dark {
+    margin: 5px;
     font-size: 12px;
   }
 
   .wip-title,
   .wip-title-dark {
-    font-size: 18px;
+    font-size: 21px;
     margin-top: -10px;
+    margin-bottom: 15px;
   }
 }
 
 .proj-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 20px 45px;
+  padding: 10px 40px;
+  text-align: center;
 }
 
 .proj-image {
+  width: 100px;
   border-radius: 5px;
-  max-width: 120px;
   border: 1px solid lightgrey;
 }
 
 .proj-title {
-  margin: 4px 10px;
-  font-size: 15px;
+  margin: 8px 10px;
+  font-size: 18px;
   font-weight: 800;
 }
 
 .proj-info {
+  align-items: center;
   width: 100%;
-  margin-left: 5px;
   text-align: center;
 }
 
@@ -415,6 +435,11 @@ a {
 }
 
 @media (max-width: 600px) {
+  .proj-card {
+    padding: 5px;
+    margin: 0px 15px;
+  }
+
   .proj-image {
     width: 80px;
   }
