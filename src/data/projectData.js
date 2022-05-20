@@ -9,12 +9,12 @@ const projectData = [
     image: "portfolio.png",
   },
   {
-    name: "Tours App",
+    name: "Todo App",
     about:
-      "Tours app. Used to dynamically load content from asynchronous API calls using react hooks.",
-    live: "https://tours.andrewsadikov.com",
-    code: "https://github.com/AndrewSadikov/ReactToursApp",
-    image: "tours.png",
+      "My first app with React + Typescript. I came up with the idea to use template literals to set classes allowing me to change the colors of the app with the buttons under the title.",
+    live: "https://todo.andrewsadikov.com",
+    code: "https://github.com/AndrewSadikov/TodoListApp",
+    image: "todo.png",
   },
   {
     name: "First React App",

@@ -338,6 +338,7 @@ a {
 .proj-image {
   border-radius: 5px;
   max-width: 120px;
+  border: 1px solid lightgrey;
 }
 
 .proj-title {
